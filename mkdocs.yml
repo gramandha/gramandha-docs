@@ -1,5 +1,6 @@
 site_name: gramandha-Docs
 repo_name: gramandha/gramandha-docs
+repo_url: https://github.com/gramandha/gramandha-docs
 extra_css:
   - stylesheets/extra.css
 theme:
