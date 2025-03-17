@@ -33,3 +33,6 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+nav: 
+  - Home: index.md
+  # - About: about.md
