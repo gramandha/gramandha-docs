@@ -1,6 +1,7 @@
-# Welcome to MkDocs
+# Selamat Datang di Gramandha-Docs
+Website ini berisi tentang dokumentasi materi pengajaran di Teknik Elektro, Universitas Jember.
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Perancang dan pembuat materi : Gramandha Wega Intyanto, S.ST., M.T.
 
 ## Commands
 
