@@ -35,4 +35,5 @@ theme:
         name: Switch to light mode
 nav: 
   - Home: index.md
+  - YOLO: index.md
   # - About: about.md
