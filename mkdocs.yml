@@ -4,6 +4,7 @@ repo_url: https://github.com/gramandha/gramandha-docs
 extra_css:
   - stylesheets/extra.css
 theme:
+  language: id
   nav:
     - Home: index.md
     - Doumentasi Repo 1:
