@@ -13,9 +13,10 @@ theme:
   features:
     - navigation.path
     - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs.sticky
     - navigation.expand
     - navigation.sections
+    - navigation.footer
   name: material
   logo: assets/logo.png
   favicon: assets/favicon.ico
@@ -34,7 +35,32 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+
+extra:
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:<gramandha@unej.ac.id>
+      name: email
+    - icon: fontawesome/brands/google-scholar
+      link: https://scholar.google.co.id/citations?user=vrmh4RoAAAAJ&hl=id
+      name: google-scholar
+    - icon: fontawesome/brands/facebook
+      link: https://scholar.google.co.id/citations?user=vrmh4RoAAAAJ&hl=id
+      name: google-scholar
+
+copyright: Copyright &copy; 2025 Gramandha Wega Intyanto
+
 nav: 
   - Home: index.md
+  - ROS2:
+      - README: README.md
+      - Getting Started: getting-started.md
+      - Installation: installation.md
+      - Usage: usage.md
+      - Configuration: configuration.md
+      - Examples: examples.md
+      - FAQ: faq.md
   # - YOLO-Tutorial: test.md
   # - About: about.md
+
+  
