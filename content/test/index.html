@@ -1,0 +1,1055 @@
+
+<!doctype html>
+<html lang="id" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Pertemuan 1: Pengantar Machine Learning pada bidang Teknik Elektro - gramandha-Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pertemuan-1-pengantar-machine-learning-pada-bidang-teknik-elektro" class="md-skip">
+          Lewati ke isi
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="gramandha-Docs" class="md-header__button md-logo" aria-label="gramandha-Docs" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            gramandha-Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Pertemuan 1: Pengantar Machine Learning pada bidang Teknik Elektro
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cari" placeholder="Cari" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cari">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Kosongkan" aria-label="Kosongkan" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Mempersiapkan pencarian
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/gramandha/gramandha-docs" title="Ke repositori" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    gramandha/gramandha-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tab" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../README.md" class="md-tabs__link">
+          
+  
+  
+  ROS2
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigasi" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="gramandha-Docs" class="md-nav__button md-logo" aria-label="gramandha-Docs" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    gramandha-Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/gramandha/gramandha-docs" title="Ke repositori" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    gramandha/gramandha-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    ROS2
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            ROS2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    README
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Usage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-definisi-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Definisi Machine Learning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Definisi Machine Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definisi-dari-beberapa-ahli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definisi dari beberapa ahli
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-sejarah-singkat-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Sejarah Singkat Machine Learning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Sejarah Singkat Machine Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1950-an" class="md-nav__link">
+    <span class="md-ellipsis">
+      1950-an:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1970-an-sd-1980-an" class="md-nav__link">
+    <span class="md-ellipsis">
+      1970-an s.d. 1980-an:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1990-an" class="md-nav__link">
+    <span class="md-ellipsis">
+      1990-an:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2000-an-sd-sekarang" class="md-nav__link">
+    <span class="md-ellipsis">
+      2000-an s.d. Sekarang:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-klasifikasi-machine-learning-yang-akan-di-pelajari" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Klasifikasi Machine Learning yang akan di pelajari
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Klasifikasi Machine Learning yang akan di pelajari">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supervised Learning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unsupervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unsupervised Learning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unsupervised Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contoh-dataset-ml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contoh dataset ML
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-peran-machine-learning-dalam-teknik-elektro" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Peran Machine Learning dalam Teknik Elektro
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Peran Machine Learning dalam Teknik Elektro">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-pemrosesan-sinyal-dan-citra-digital" class="md-nav__link">
+    <span class="md-ellipsis">
+      a. Pemrosesan Sinyal dan Citra Digital
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-sistem-kendali-dan-otomasi" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. Sistem Kendali dan Otomasi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-prediksi-dan-optimasi-dalam-jaringan-listrik" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Prediksi dan Optimasi dalam Jaringan Listrik
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-machine-learning-dalam-embedded-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      d. Machine Learning dalam Embedded Systems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-keamanan-dan-deteksi-anomali" class="md-nav__link">
+    <span class="md-ellipsis">
+      e. Keamanan dan Deteksi Anomali
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-tools-yang-digunakan-untuk-ml" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Tools yang digunakan untuk ML
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-tugas-mahasiswa" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Tugas Mahasiswa
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="pertemuan-1-pengantar-machine-learning-pada-bidang-teknik-elektro">Pertemuan 1: Pengantar <em>Machine Learning</em> pada bidang Teknik Elektro</h1>
+<p><strong>[TKE1686] MK Machine Learning (3-SKS)</strong></p>
+<p>oleh Gramandha Wega Intyanto</p>
+<h2 id="1-definisi-machine-learning">1. Definisi Machine Learning</h2>
+<p>Machine Learning (ML) adalah cabang dari kecerdasan buatan (Artificial Intelligence, AI) yang memungkinkan sistem untuk belajar dari data tanpa diprogram secara eksplisit. ML menggunakan algoritma dan model statistik untuk mengenali pola dalam data dan membuat keputusan atau prediksi berdasarkan pola tersebut.</p>
+<h3 id="definisi-dari-beberapa-ahli">Definisi dari beberapa ahli</h3>
+<blockquote>
+<p><strong>Arthur Samuel (1959)</strong>: "<em>Machine Learning</em> adalah bidang studi terkait pemberian kemampuan pada komputer untuk belajar tanpa diprogram secara eksplisit."</p>
+<p><strong>Tom Mitchell (1997)</strong>: 
+"<em>Machine Learning</em> adalah suatu program komputer yang belajar dari pengalaman <em>(experience E)</em> terhadap tugas <em>(Task T)</em> dengan ukuran performa <em>(performance P)</em>, jika performanya terhadap tugas <em>(Task T)</em> meningkat dengan pengalaman <em>(experience E)</em>."</p>
+</blockquote>
+<p>Dapat disimpulkan bahwa <strong>machine learning</strong> merupakan bidang ilmu yang mempelajari dari data dan mengeksekusi hasil dari pembelajaran data tersebut.</p>
+<h2 id="2-sejarah-singkat-machine-learning">2. Sejarah Singkat Machine Learning</h2>
+<h3 id="1950-an">1950-an:</h3>
+<ul>
+<li>Alan Turing memperkenalkan Turing Test untuk mengukur kecerdasan mesin.</li>
+<li>Frank Rosenblatt mengembangkan perceptron, model awal dari neural network.</li>
+</ul>
+<h3 id="1970-an-sd-1980-an">1970-an s.d. 1980-an:</h3>
+<ul>
+<li>Pengembangan algoritma decision tree dan neural network pertama.</li>
+<li>Backpropagation mulai digunakan dalam pelatihan neural network.</li>
+</ul>
+<h3 id="1990-an">1990-an:</h3>
+<ul>
+<li>Munculnya Support Vector Machine (SVM) dan Random Forest sebagai metode klasifikasi canggih.</li>
+<li>Mulai berkembangnya aplikasi ML dalam pattern recognition dan data mining.</li>
+</ul>
+<h3 id="2000-an-sd-sekarang">2000-an s.d. Sekarang:</h3>
+<ul>
+<li>Kemajuan dalam Deep Learning dan Neural Networks berkat peningkatan daya komputasi dan ketersediaan big data.</li>
+<li>Model seperti Convolutional Neural Network (CNN) dan Recurrent Neural Network (RNN) menjadi dasar dalam pengolahan citra dan sinyal.</li>
+<li>Aplikasi ML berkembang pesat di berbagai bidang, termasuk kesehatan, finansial, transportasi, dan teknik elektro.</li>
+</ul>
+<h2 id="3-klasifikasi-machine-learning-yang-akan-di-pelajari">3. Klasifikasi Machine Learning yang akan di pelajari</h2>
+<p>Ditarik dari permasalahan pembelajaran <em>(learning problem)</em> dalam konteks ML pada dataset (sejumlah <em>n</em> sample data) untuk melakukan prediksi terhadap properties yang tidak diketahui pada dataset lain yang sejenis. 
+Secara umum untuk penyelesain permasalahan pembelajaran, <em>Machine Learning</em> dibagi menjadi dua teknik dasar yang akan kita pelajari pada mata kuliah (2), yaitu <strong>supervised learning</strong> dan <strong>unsupervised learning</strong></p>
+<h3 id="supervised-learning">Supervised Learning</h3>
+<p>Teknik atau model pembelajaran yang diterapkan pada mesin dari pola dalam data yang memiliki label tertentu</p>
+<p>contoh kasus: 
+1. Deteksi kesalah paa jaringan listrik, dimana data yang dimiliki yaitu tegangan, arus, frekuensi dalam jaringan. Kemudian tiap data memiliki label jaringan berstatus: <strong>Normal</strong> dan <strong>Gangguan</strong>
+2. Robot akan melakukan klasifikasi jenis bunga, dimana data yang memiliki kelopak bunga, bentuk kelopak, warna, dsb. Kemudian tiap data memiliki label jenis bunga:  <strong>Mawar</strong> dan <strong>Bunga Matahari</strong></p>
+<p>Pada supervised learning ini pada umumnya memiliki minimal 2 data, data input yaitu pola pada data dan data output yaitu kategori (label).</p>
+<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20241022160725494723/supervised-machine-learning.webp" width="500">
+source : geeksforgeeks</p>
+<p>Tipe dari <em>Supervised Learning</em> yaitu:</p>
+<ol>
+<li>Klasifikasi: Di mana output adalah variabel kategoris (mis., Email spam vs non-spam, ya vs tidak). </li>
+<li>Regresi: Di mana output adalah variabel kontinu (mis., Memprediksi harga rumah, harga saham).</li>
+</ol>
+<p>Contoh algoritma atau model yang sering digunakan pada bidang elektro yaitu Regresi, Suppert Vector Machine (SVM), K-Nearest Neighbors (K-NN), Random Forest biasanya digunakan untuk klasifikasi, dsb.</p>
+<p>Berikut contoh algoritma yang lebih lengkap terkait <em>Supervised Learning</em></p>
+<table>
+<thead>
+<tr>
+<th>Algoritma</th>
+<th>Regresi, Klasifikasi</th>
+<th>Tujuan</th>
+<th>Metode</th>
+<th>Kasus Penggunaan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Regresi Linear</strong></td>
+<td>Regresi</td>
+<td>Memprediksi nilai output kontinu</td>
+<td>Persamaan linear yang meminimalkan jumlah kuadrat residu</td>
+<td>Memprediksi nilai kontinu</td>
+</tr>
+<tr>
+<td>Regresi Logistik</td>
+<td>Klasifikasi</td>
+<td>Memprediksi variabel output biner</td>
+<td>Fungsi logistik yang mentransformasikan hubungan linear</td>
+<td>Tugas klasifikasi biner</td>
+</tr>
+<tr>
+<td>Pohon Keputusan</td>
+<td>Keduanya</td>
+<td>Memodelkan keputusan dan hasil</td>
+<td>Struktur pohon dengan keputusan dan hasil</td>
+<td>Tugas klasifikasi dan regresi</td>
+</tr>
+<tr>
+<td>Random Forest</td>
+<td>Keduanya</td>
+<td>Meningkatkan akurasi klasifikasi dan regresi</td>
+<td>Menggabungkan beberapa pohon keputusan</td>
+<td>Mengurangi overfitting, meningkatkan akurasi prediksi</td>
+</tr>
+<tr>
+<td><strong>SVM</strong></td>
+<td>Keduanya</td>
+<td>Membuat hyperplane untuk klasifikasi atau prediksi nilai kontinu</td>
+<td>Memaksimalkan margin antara kelas atau memprediksi nilai kontinu</td>
+<td>Tugas klasifikasi dan regresi</td>
+</tr>
+<tr>
+<td><strong>KNN</strong></td>
+<td>Keduanya</td>
+<td>Memprediksi kelas atau nilai berdasarkan k tetangga terdekat</td>
+<td>Mencari k tetangga terdekat dan memprediksi berdasarkan mayoritas atau rata-rata</td>
+<td>Tugas klasifikasi dan regresi, sensitif terhadap data berisik</td>
+</tr>
+<tr>
+<td>Gradient Boosting</td>
+<td>Keduanya</td>
+<td>Menggabungkan model lemah untuk membuat model yang kuat</td>
+<td>Mengoreksi kesalahan secara iteratif dengan model baru</td>
+<td>Tugas klasifikasi dan regresi untuk meningkatkan akurasi prediksi</td>
+</tr>
+<tr>
+<td>Naive Bayes</td>
+<td>Klasifikasi</td>
+<td>Memprediksi kelas berdasarkan asumsi independensi fitur</td>
+<td>Teorema Bayes dengan asumsi independensi fitur</td>
+<td>Klasifikasi teks, penyaringan spam, analisis sentimen, medis</td>
+</tr>
+</tbody>
+</table>
+<h3 id="unsupervised-learning">Unsupervised Learning</h3>
+<p>Teknik atau model pembelajaran yang diterapkan pada mesin dari pola dalam data yang tidak memiliki label tertentu</p>
+<p>Contoh kasus</p>
+<p>Operator jaringan lisrik ingin mengkelompokkan pelanggan berdasarkan pola komsumsi energi untuk meningkatan efiseiensi ditribusi daya. </p>
+<p>Pada <em>unsupervised learning</em> ini pada umumnya memiliki minimal 1 data, data input yaitu pola pada data.</p>
+<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20231124111325/Unsupervised-learning.png" width="500">
+source : geeksforgeeks</p>
+<p>Tipe dari <em>Unsupervised Learning</em> yaitu:</p>
+<ol>
+<li><strong>Clustering Algorithms</strong> : Pengelompokan dalam pembelajaran mesin tanpa pengawasan adalah proses pengelompokan data yang tidak berlabel ke dalam kelompok berdasarkan kesamaan mereka. Tujuan pengelompokan adalah untuk mengidentifikasi pola dan hubungan dalam data tanpa pengetahuan sebelumnya tentang makna data. </li>
+<li>Association Rule Learning : Pembelajaran aturan asosiasi juga dikenal sebagai penambangan aturan asosiasi adalah teknik umum yang digunakan untuk menemukan asosiasi dalam pembelajaran mesin tanpa pengawasan.</li>
+<li>Dimensionality Reduction : Pengurangan dimensi adalah proses mengurangi jumlah fitur dalam dataset sambil menjaga informasi sebanyak mungkin. Teknik ini berguna untuk meningkatkan kinerja algoritma pembelajaran mesin dan untuk visualisasi data.</li>
+</ol>
+<p>Contoh algoritma atau model yang digunakan pada yaitu K-means cluster</p>
+<h4 id="contoh-dataset-ml">Contoh dataset ML</h4>
+<p>Supervised</p>
+<p><img src="https://ilmudatapy.com/wp-content/uploads/2020/07/klasifikasi-1.png" width="250"></p>
+<p>Unsupervised</p>
+<p><img src="dataset_image.png" width="250"></p>
+<h2 id="3-peran-machine-learning-dalam-teknik-elektro">3. Peran Machine Learning dalam Teknik Elektro</h2>
+<p>Machine Learning memiliki peran penting dalam berbagai aspek Teknik Elektro, termasuk pemrosesan sinyal, pengendalian sistem, dan optimasi kinerja perangkat elektronik. Beberapa penerapan utama ML dalam Teknik Elektro adalah:</p>
+<h3 id="a-pemrosesan-sinyal-dan-citra-digital">a. Pemrosesan Sinyal dan Citra Digital</h3>
+<ul>
+<li>Deteksi dan klasifikasi sinyal menggunakan Fourier Transform dan Wavelet Transform.</li>
+<li>Pengenalan pola dalam sinyal kelistrikan, seperti fault detection dalam jaringan listrik.</li>
+<li>Penerapan ML dalam pengolahan citra digital untuk mendeteksi objek atau menganalisis data dari kamera industri.</li>
+</ul>
+<h3 id="b-sistem-kendali-dan-otomasi">b. Sistem Kendali dan Otomasi</h3>
+<ul>
+<li>Machine Learning digunakan dalam sistem kontrol adaptif, misalnya pada robotik dan otomasi industri.</li>
+<li>Peningkatan efisiensi sistem kendali berbasis fuzzy logic dan neural network.</li>
+</ul>
+<h3 id="c-prediksi-dan-optimasi-dalam-jaringan-listrik">c. Prediksi dan Optimasi dalam Jaringan Listrik</h3>
+<ul>
+<li>Memprediksi konsumsi daya listrik menggunakan time-series forecasting.</li>
+<li>Optimasi distribusi daya menggunakan ML untuk meningkatkan efisiensi grid listrik.</li>
+</ul>
+<h3 id="d-machine-learning-dalam-embedded-systems">d. Machine Learning dalam Embedded Systems</h3>
+<ul>
+<li>Implementasi TinyML (Machine Learning pada perangkat dengan daya rendah seperti mikroprosesor dan FPGA).</li>
+<li>Aplikasi ML dalam Internet of Things (IoT) untuk sistem pemantauan cerdas.</li>
+</ul>
+<h3 id="e-keamanan-dan-deteksi-anomali">e. Keamanan dan Deteksi Anomali</h3>
+<ul>
+<li>Pendeteksian anomali dalam jaringan listrik untuk mencegah blackout atau gangguan listrik.</li>
+<li>Sistem keamanan berbasis ML dalam deteksi peretasan jaringan komunikasi dan kendali.</li>
+</ul>
+<h2 id="4-tools-yang-digunakan-untuk-ml">4. Tools yang digunakan untuk ML</h2>
+<p>Pada akhir tahun ini perancangan ML bahasa program yang sering digunakan yaitu Python dengan beberapa tools library berikut:</p>
+<p>Framework dan Library ML
+- <a href="https://www.tensorflow.org/">TensorFlow</a> : Framework open-source untuk deep learning dan ML yang dikembangkan oleh Google.
+- <a href="https://pytorch.org/">PyTorch</a>  :   Framework ML berbasis Python dengan fleksibilitas tinggi, dikembangkan oleh Facebook AI.
+- <a href="https://scikit-learn.org/">Scikit-learn</a> : Library ML berbasis Python untuk klasifikasi, regresi, dan clustering.
+- <a href="https://keras.io/">Keras</a>  :   API tinggi berbasis TensorFlow untuk pengembangan model deep learning.</p>
+<p>Tools untuk Pemrosesan Data dan Visualisasi
+- <a href="https://pandas.pydata.org/">Pandas</a> :   Library Python untuk manipulasi dan analisis data berbasis tabel.
+- <a href="https://numpy.org/">NumPy</a> :   Library untuk operasi numerik dan array multidimensi dalam Python.
+- <a href="https://matplotlib.org/">Matplotlib</a> : Library visualisasi untuk membuat grafik dan plot data.
+- <a href="https://seaborn.pydata.org/">Seaborn</a> : Library berbasis Matplotlib untuk visualisasi data yang lebih menarik.
+- <a href="https://www.dask.org/">Dask</a> : Library untuk pemrosesan data besar yang dapat berjalan secara paralel.</p>
+<p>*Note: Kalau Anda ingin mencoba-coba ada software yang sudah include untuk penerapan ML yaitu <a href="https://ml.cms.waikato.ac.nz/weka/index.html">WEKA</a></p>
+<h2 id="4-tugas-mahasiswa">4. Tugas Mahasiswa</h2>
+<ol>
+<li>Silahkan cari studi kasus pada bidang Anda yang dapat diselesaikan dengan ML. Beri 2 contoh tiap teknik(<strong><em>supervised learning</em></strong> dan <strong><em>unspervised learning</em></strong>) satu masalah!</li>
+<li>Cari dataset terkait studi kasus tersebut kemudian jelaskan proses penyelesaian dengan algoritma apa!</li>
+</ol>
+<p><strong>Note:</strong>
+Rekomendasi tempat untuk mencari dataset: <a href="https://www.kaggle.com/datasets">kaggle</a>, <a href="https://archive.ics.uci.edu/">uci</a>, <a href="https://datasetsearch.research.google.com/">google dataset</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Gramandha Wega Intyanto
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<gramandha@unej.ac.id>" target="_blank" rel="noopener" title="email" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://scholar.google.co.id/citations?user=vrmh4RoAAAAJ&hl=id" target="_blank" rel="noopener" title="google-scholar" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M390.9 298.5s0 .1.1.1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64 1.7-3.6 3.6-7.2 5.6-10.7q6.6-11.4 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3 33.6 0 64.6 11.1 89.6 29.9 9.1 6.9 17.4 14.7 24.8 23.5 5.6 6.6 10.6 13.8 15 21.3 2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0l256 202.7-94.7 77.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://scholar.google.co.id/citations?user=vrmh4RoAAAAJ&hl=id" target="_blank" rel="noopener" title="google-scholar" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.sections", "navigation.footer"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Tersalin ke clipboard", "clipboard.copy": "Salin ke clipboard", "search.result.more.one": "1 lagi di halaman ini", "search.result.more.other": "# lagi di halaman ini", "search.result.none": "Tidak ada dokumen yang sesuai", "search.result.one": "1 dokumen ditemukan", "search.result.other": "# dokumen ditemukan", "search.result.placeholder": "Ketik untuk mulai pencarian", "search.result.term.missing": "Tidak ada", "select.version": "Pilih versi"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
