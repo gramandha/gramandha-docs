@@ -37,7 +37,9 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: 'Pendahuluan', link: '/yolo/00-pendahuluan' },
+            { text: 'Lesson 1 - Prasyarat Dasar', link: '/yolo/01-lesson-1-prasyarat-dasar' },
             { text: 'Lesson 2 - Konsep Dasar Object Detection', link: '/yolo/02-lesson-2-konsep-object-detection' },
+            { text: 'Lesson 3 - Arsitektur Evolusi YOLO', link: '/yolo/03-lesson-3-arsitektur-evolusi-yolo' },
             { text: 'Lesson 4 - Praktik dan Inferensi Model Pretrained', link: '/yolo/04-lesson-4-inferensi-pretrained' },
             { text: 'Lesson 5 - Pelatihan Dataset Kustom', link: '/yolo/05-lesson-5-pelatihan-dataset-kustom' },
             { text: 'Lesson 6 - Optimasi dan Deployment', link: '/yolo/06-lesson-6-optimasi-deployment' },
