@@ -1,9 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/gramandha-docs/',
   title: 'gramandha-docs',
-  description: 'Modul pelatihan ROS 2 Jazzy ',
+  description: 'Modul pelatihan Gramandha',
+  base: '/gramandha-docs/',
   cleanUrls: true,
   appearance: 'default',
   themeConfig: {
