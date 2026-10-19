@@ -556,4 +556,4 @@ Pola penerjemahan agar tidak bingung:
 
 ---
 
-🏠 [Daftar Isi](/bahasa-c/Modul-0-Algoritma-Flowchart-Pseudocode) | ➡️ [Modul 1: Fondasi Bahasa C](Modul-1-Fondasi-Bahasa-C.md)
+<!-- 🏠 [Daftar Isi](/bahasa-c/Modul-0-Algoritma-Flowchart-Pseudocode) | ➡️ [Modul 1: Fondasi Bahasa C](Modul-1-Fondasi-Bahasa-C.md) -->

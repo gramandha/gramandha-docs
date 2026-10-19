@@ -568,4 +568,4 @@ int main() {
 
 ---
 
-⬅️ [Modul 1](Modul-1-Fondasi-Bahasa-C.md) | 🏠 [Daftar Isi](/bahasa-c/Modul-0-Algoritma-Flowchart-Pseudocode) | ➡️ [Modul 3: Fungsi dan Cakupan Variabel](Modul-3-Fungsi-dan-Cakupan-Variabel.md)
+<!-- ⬅️ [Modul 1](Modul-1-Fondasi-Bahasa-C.md) | 🏠 [Daftar Isi](/bahasa-c/Modul-0-Algoritma-Flowchart-Pseudocode) | ➡️ [Modul 3: Fungsi dan Cakupan Variabel](Modul-3-Fungsi-dan-Cakupan-Variabel.md) -->

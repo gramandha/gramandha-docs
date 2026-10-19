@@ -384,4 +384,4 @@ flowchart TD
 
 ---
 
-⬅️ [Modul 2](Modul-2-Kontrol-Alur-Logika.md) | 🏠 [Daftar Isi](/bahasa-c/Modul-0-Algoritma-Flowchart-Pseudocode) | ➡️ [Modul 4: Struktur Data Dasar](Modul-4-Struktur-Data-Dasar.md)
+<!-- ⬅️ [Modul 2](Modul-2-Kontrol-Alur-Logika.md) | 🏠 [Daftar Isi](/bahasa-c/Modul-0-Algoritma-Flowchart-Pseudocode) | ➡️ [Modul 4: Struktur Data Dasar](Modul-4-Struktur-Data-Dasar.md) -->

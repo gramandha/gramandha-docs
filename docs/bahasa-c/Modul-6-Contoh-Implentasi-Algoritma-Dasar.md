@@ -487,4 +487,4 @@ flowchart TD
 
 ---
 
-⬅️ [Modul 5](Modul-5-Pointer-dan-Memori-Dinamis.md) | 🏠 [Daftar Isi](/bahasa-c/Modul-0-Algoritma-Flowchart-Pseudocode) | ➡️ [Modul 7: Operasi Berkas](Modul-7-Operasi-Berkas.md)
+<!-- ⬅️ [Modul 5](Modul-5-Pointer-dan-Memori-Dinamis.md) | 🏠 [Daftar Isi](/bahasa-c/Modul-0-Algoritma-Flowchart-Pseudocode) | ➡️ [Modul 7: Operasi Berkas](Modul-7-Operasi-Berkas.md) -->

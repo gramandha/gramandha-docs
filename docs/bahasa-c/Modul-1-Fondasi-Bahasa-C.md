@@ -403,4 +403,4 @@ Masukkan suhu (Celsius): 37.5
 
 ---
 
-⬅️ [Modul 0: Algoritma, Flowchart, Pseudocode](Modul-0-Algoritma-Flowchart-Pseudocode.md) | 🏠 [Daftar Isi](/bahasa-c/Modul-0-Algoritma-Flowchart-Pseudocode) | ➡️ [Modul 2: Kontrol Alur Logika](Modul-2-Kontrol-Alur-Logika.md)
+<!-- ⬅️ [Modul 0: Algoritma, Flowchart, Pseudocode](Modul-0-Algoritma-Flowchart-Pseudocode.md) | 🏠 [Daftar Isi](/bahasa-c/Modul-0-Algoritma-Flowchart-Pseudocode) | ➡️ [Modul 2: Kontrol Alur Logika](Modul-2-Kontrol-Alur-Logika.md) -->

@@ -398,4 +398,4 @@ IPK tertinggi: Citra (3.90)
 
 ---
 
-⬅️ [Modul 3](Modul-3-Fungsi-dan-Cakupan-Variabel.md) | 🏠 [Daftar Isi](/bahasa-c/Modul-0-Algoritma-Flowchart-Pseudocode) | ➡️ [Modul 5: Pointer dan Memori Dinamis](Modul-5-Pointer-dan-Memori-Dinamis.md)
+<!-- ⬅️ [Modul 3](Modul-3-Fungsi-dan-Cakupan-Variabel.md) | 🏠 [Daftar Isi](/bahasa-c/Modul-0-Algoritma-Flowchart-Pseudocode) | ➡️ [Modul 5: Pointer dan Memori Dinamis](Modul-5-Pointer-dan-Memori-Dinamis.md) -->

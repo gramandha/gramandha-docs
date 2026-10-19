@@ -299,4 +299,4 @@ Setelah diisi manual    : 10 20 30 40 50
 
 ---
 
-⬅️ [Modul 4](Modul-4-Struktur-Data-Dasar.md) | 🏠 [Daftar Isi](/bahasa-c/Modul-0-Algoritma-Flowchart-Pseudocode) | ➡️ [Modul 6: Algoritma Dasar](Modul-6-Contoh-Implentasi-Algoritma-Dasar.md)
+<!-- ⬅️ [Modul 4](Modul-4-Struktur-Data-Dasar.md) | 🏠 [Daftar Isi](/bahasa-c/Modul-0-Algoritma-Flowchart-Pseudocode) | ➡️ [Modul 6: Algoritma Dasar](Modul-6-Contoh-Implentasi-Algoritma-Dasar.md) -->
