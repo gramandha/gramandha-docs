@@ -8,7 +8,7 @@
 5. [Operator](#5-operator)
 6. [Latihan](#6-latihan)
 
---- -->
+---s -->
 
 ## 1. Pengantar: Dari Kode ke Program
 
