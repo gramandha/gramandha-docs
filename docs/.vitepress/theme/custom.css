@@ -1,0 +1,34 @@
+:root {
+  --vp-c-brand-1: #2563eb;
+  --vp-c-brand-2: #1d4ed8;
+  --vp-c-brand-3: #93c5fd;
+}
+
+.VPHome .VPFeature {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+@media (min-width: 960px) {
+  .VPHero .container {
+    /* max-width: 1440px; */
+  }
+
+  .VPHero .main {
+    width: 100%;
+    max-width: none;
+  }
+
+  .VPHero .text {
+    max-width: 1280px;
+  }
+}
+
+.vp-doc h2 {
+  margin-top: 2rem;
+}
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+}
